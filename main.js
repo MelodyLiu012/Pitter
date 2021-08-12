@@ -37,6 +37,7 @@ notebookP.onclick = () => {
   }
 }
 
+
 const loadingScreen = document.getElementById("loading");
 const rainAudio = document.getElementById("rain");
 
@@ -69,6 +70,10 @@ menuButton.onclick = () => {
     menuButtonClicked = false;
   }
 }
+menuWindow.addEventListener('transitionend', () => {
+  if (menuButtonClicked) menuWindow.style.zIndex = 0;
+});
+
 
 const radioP = document.getElementById("radioP");
 var radioPlayer = document.getElementById("radioPlayer");
