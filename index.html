@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Your Room</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="assets/moon_favicon.png" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="loading">
+      <p>Loading...</p>
+      <p style="font-size: 1.5rem; color: gray">Note: this website has audio.</p>
+    </div>
+    <div id="welcome">
+      <span id="close">X</span>
+      <div id="welcomeContent">
+        <i style="color:lightgray">**Note: this website has audio.**</i>
+        <p>
+          Welcome to your room. 
+        </p>
+        <p>
+          Here, you can relax to the sound of rain, play music on the radio, 
+          and enjoy some time to yourself. 
+        </p>
+        <p>
+          Use the notebook to jot down any feelings or ideas you may have. You can even work on that essay
+          assignment that you can't concentrate on writing in other environments. After you finish, you
+          can download a text file of your work.
+        </p>
+        <p>
+          Simply click on the radio or notebook to interact with them.
+        </p>
+      </div>
+    </div>
+    <div id="content">
+
+      <span id="threeDots"></span>
+
+      <div id="room">
+        <img id="roomP" src="assets/room.gif">
+        <img id="notebookP" src="assets/notebook.png">
+        <img id="radioP" src="assets/radio.png">
+      </div>
+      
+      <!-- <div id="radio">
+
+      </div>
+      -->
+      <div id="notebook">
+        <div id="page">
+          <img id="pageCornerA" src="assets/page corner.png">
+          <img id="pageCornerB" src="assets/page corner.png">
+          <div id="writingBlock">
+            <textarea id="writing" placeholder="Click here to start writing."></textarea>
+          </div>
+        </div>
+        
+      </div> 
+      <div id="menu">
+        -Rain-<br>
+        <audio loop controls id="rain">
+          <source src="assets/rain.wav" type="audio/wav">
+        </audio>
+        <p>-Credit-
+          <ul>
+            <li>Art by me</li>
+            <li>Playlist by Inspira on YouTube</li>
+            <li>Each song belongs to their respective artists</li>
+          </ul>
+        </p>
+      </div>
+      <!-- <iframe width=”560″ height=”315″ src=”https://www.youtube.com/embed/videoseries?list=PLWLfw4C6KoVE__0a9UsDtWa6qMN-ck8Ab” frameborder=”0″ allow=”accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture” allowfullscreen></iframe> -->
+
+    </div>
+
+    
+    
+    <script src="main.js" async defer></script>
+  </body>
+</html>
