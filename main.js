@@ -69,6 +69,43 @@ menuButton.onclick = () => {
     menuButtonClicked = false;
   }
 }
-// welcomeWindow.addEventListener('transitionend', () => {
-//   if (closeButtonClicked) welcomeWindow.style.zIndex = 0;
-// });
+
+const radioP = document.getElementById("radioP");
+var radioPlayer = document.getElementById("radioPlayer");
+
+var radioClicked = false;
+
+radioP.onclick = () => {
+  if (!radioClicked)
+  {
+    radioPlayer.play();
+    radioClicked = true;
+  }
+  else
+  {
+    radioPlayer.pause();
+    radioClicked = false;
+  }
+}
+
+const playList = 
+  [
+    "piana - Norway.mp3", 
+    "Makoto Tanaka - anoko to anoco.mp3",
+    "Choro Club - Kujira no Hirune.mp3"
+  ];
+var songIndex = 1;
+
+radioPlayer.addEventListener('ended', function(){
+  radioPlayer.pause();
+
+  if (songIndex > playList.length - 1) 
+  {
+    songIndex = 0;
+  }
+  radioPlayer.src = "assets/music/" + playList[songIndex];
+  songIndex++;
+
+  radioPlayer.load();
+  radioPlayer.play();
+});
