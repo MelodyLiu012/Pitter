@@ -73,7 +73,7 @@ body
   text-shadow: 0px 0px 5px white;
   background-color: rgba(255, 255, 255, 0.15);
 
-  background-image: radial-gradient(circle, white 10px, transparent 11px);
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.9) 10px, transparent 11px);
   
   transition: background-color 0.35s ease-in-out;
 }
@@ -152,7 +152,7 @@ body
   height: 100vh;
   position: absolute;
   left: 0%;
-  top: -100%;
+  top: -100vh;
   display: flex;
   justify-content: center;
 
@@ -225,5 +225,7 @@ body
   transition: opacity 0.7s ease-in-out;
 }
 
-
-
+a:hover
+{
+  color: pink;
+}

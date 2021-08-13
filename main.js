@@ -1,5 +1,6 @@
 const welcomeWindow = document.getElementById("welcome");
 const closeButton = document.getElementById("close");
+const rainAudio = document.getElementById("rain");
 
 welcomeWindow.style.opacity = 1;
 
@@ -8,6 +9,7 @@ var closeButtonClicked = false;
 closeButton.onclick = () => {
   welcomeWindow.style.opacity = 0;
   closeButtonClicked = true;
+  rainAudio.play();
 }
 welcomeWindow.addEventListener('transitionend', () => {
   if (closeButtonClicked) welcomeWindow.style.zIndex = 0;
@@ -39,7 +41,6 @@ notebookP.onclick = () => {
 
 
 const loadingScreen = document.getElementById("loading");
-const rainAudio = document.getElementById("rain");
 
 window.addEventListener("load", event => {
   var roomGIF = document.getElementById("roomP");
@@ -97,7 +98,8 @@ const playList =
   [
     "piana - Norway.mp3", 
     "Makoto Tanaka - anoko to anoco.mp3",
-    "Choro Club - Kujira no Hirune.mp3"
+    "Choro Club - Kujira no Hirune.mp3",
+    "GIRakaCHEEZER - Garden.mp3"
   ];
 var songIndex = 1;
 

@@ -1,0 +1,22 @@
+let users: 
+- download a txt file of their writing
+- choose song to play via youtube link
+- choose song on the radio playlist
+- (?)queue songs
+- turn light on/off (with light switch)
+- (?)watch youtube videos via a computer
+- change font family, size, and color(?) by clicking on pen
+
+- the interactable objects need to look "selected" on hover
+- the notebook should have an "open" sprite
+- (minor) fix the lights below the window
+- (not sure if fixed) make menu window go behind everything if not active
+- make only the rain, coffee, and other animated things a gif, not the whole background
+- style scrollbar on notebook page to look better
+- notebook page should have lines
+- improve animations and art overall
+
+easter eggs/non functional interactions
+- dog winks and disappears if clicked on, but comes back later
+- hanging rain doll swings when clicked on
+- 
